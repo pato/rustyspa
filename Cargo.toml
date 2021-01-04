@@ -1,0 +1,18 @@
+[package]
+name = "rustyspa"
+version = "0.0.1"
+authors = ["Pato Lankenau <rust@p.lankenau.io>"]
+edition = "2018"
+
+[dependencies]
+panic-halt = "0.2.0"
+
+[dependencies.arduino-uno]
+git = "https://github.com/Rahix/avr-hal"
+
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
